@@ -29,7 +29,6 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class) // 목 객체 자동 초기화, 예외 처리
 class PostServiceTest {
 
-    private static final Logger log = LoggerFactory.getLogger(PostServiceTest.class);
     @Mock
     private PostRepository postRepository;
     @Mock
@@ -41,10 +40,6 @@ class PostServiceTest {
 
     @InjectMocks
     private PostService postService;
-
-    private Company company;
-    private Post post1;
-    private User user;
 
     @Test
     void testCreatePost() {
